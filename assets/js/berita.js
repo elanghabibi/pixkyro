@@ -30,7 +30,6 @@ if (berita.length != 0) {
   for (let i = 0; i < 3; i++) {
     const beritaCard = document.createElement("div");
     beritaCard.className = "berita-card";
-    beritaCard.dataset.aos = "fade-up"
 
     const beritaImg = document.createElement("div");
     beritaImg.id = "beritaImg";
