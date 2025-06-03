@@ -254,7 +254,6 @@ footer {
     background: linear-gradient(to right, #20599d, #132c4a);
     padding: 4rem 3rem;
     display: flex;
-    flex-direction: column;  
 }
 
 .contact {
