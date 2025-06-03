@@ -10,9 +10,25 @@
 }
 
 @media (max-width: 720px) {
-  a, button {
+  a,
+  button {
     -webkit-tap-highlight-color: transparent;
-  }  
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  a:active,
+  a:focus {
+    outline: none;
+    background: none;
+    color: inherit;
+  }
 
   .logo {
     width: 100px;
@@ -145,50 +161,51 @@
 
   /* * End vimi */
 
-/* * Berita */
+  /* * Berita */
 
-.berita-content {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
+  .berita-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
-.berita-card {
-  width: 80vw;
-  margin-bottom: 3rem;
-}
+  .berita-card {
+    width: 80vw;
+    margin-bottom: 3rem;
+  }
 
-#beritaImg {
-  width: 80vw;
-}
+  #beritaImg {
+    width: 80vw;
+  }
 
-#beritaKeterangan {
-  margin: .5rem 0 .3rem 0;
-}
+  #beritaKeterangan {
+    margin: 0.5rem 0 0.3rem 0;
+  }
 
-#beritaJudul {
-  width: 80vw;
-}
+  #beritaJudul {
+    width: 80vw;
+  }
 
-/* * End Berita */
-
+  /* * End Berita */
 
   /* * end beranda */
-footer {
-  flex-direction: column;
-}
+  footer {
+    flex-direction: column;
+  }
 
-.contact {
-  margin: 0 0 3rem 0;
-}
+  .contact {
+    margin: 0 0 3rem 0;
+  }
 
-.contact img {
-  width: 14rem;
-}
+  .contact img {
+    width: 14rem;
+  }
 
-.sosial-media-footer h2, .sosial-media-footer a, .sosial-media-footer a p {
-  width: max-content;
-}
+  .sosial-media-footer h2,
+  .sosial-media-footer a,
+  .sosial-media-footer a p {
+    width: max-content;
+  }
 }
