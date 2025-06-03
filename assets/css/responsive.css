@@ -1,0 +1,194 @@
+@media (max-width: 400px) {
+  .beranda-welcome h1 {
+    font-size: 1.7rem;
+  }
+
+  .beranda-welcome img {
+    height: 12vh;
+    margin: 16vh 0;
+  }
+}
+
+@media (max-width: 720px) {
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }  
+
+  .logo {
+    width: 100px;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* efek gelap */
+    display: none;
+  }
+
+  .overlay.active {
+    z-index: 2;
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: fit-content;
+    height: 100vh;
+    padding: 1rem 20% 1rem 1.5rem;
+    background: #132c4a;
+    text-align: left;
+    display: none;
+    animation: 0.2s fadeOut ease-in-out;
+  }
+
+  .navbar.active {
+    z-index: 20;
+    display: block;
+    animation: 0.2s fadeIn ease-in-out;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: translateX(25px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* * Page beranda */
+
+  .beranda-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    height: 88vh;
+    text-align: center;
+  }
+
+  .beranda-welcome h1 {
+    font-size: 2rem;
+  }
+
+  .beranda-welcome img {
+    height: 15vh;
+    margin: 17vh 0;
+  }
+
+  .beranda-subjudul {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .tentang-singkat p {
+    font-size: 1.2rem;
+    width: 85vw;
+    text-align: left;
+  }
+
+  /* * VISI Misi */
+  .visi-misi-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .visi-misi-container {
+    width: 85vw;
+    margin: 2rem 0 0 1rem;
+  }
+
+  .misi {
+    margin-top: 1rem;
+  }
+
+  .visi p,
+  .misi ol {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #222;
+    width: 80vw;
+  }
+
+  .misi ol {
+    text-align: justify;
+  }
+
+  .misi ol li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* * End vimi */
+
+/* * Berita */
+
+.berita-content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.berita-card {
+  width: 80vw;
+  margin-bottom: 3rem;
+}
+
+#beritaImg {
+  width: 80vw;
+}
+
+#beritaKeterangan {
+  margin: .5rem 0 .3rem 0;
+}
+
+#beritaJudul {
+  width: 80vw;
+}
+
+/* * End Berita */
+
+
+  /* * end beranda */
+footer {
+  flex-direction: column;
+}
+
+.contact {
+  margin: 0 0 3rem 0;
+}
+
+.contact img {
+  width: 14rem;
+}
+
+.sosial-media-footer h2, .sosial-media-footer a p {
+  width: max-content;
+}
+}

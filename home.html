@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixkyro Official Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/shape.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <a href="#"
+          ><img
+            class="logo"
+            src="assets/images/logo/white_full.png"
+            alt="Pixkyro Logo"
+        /></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+          <a href="#">Beranda</a>
+          <a href="#karya">Karya</a>
+          <a href="#berita">Berita</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+      <div class="beranda" id="beranda">
+        <div class="beranda-welcome">
+          <h1 data-aos="zoom-out-down">Selamat datang di Website</h1>
+          <img
+            data-aos="zoom-out"
+            src="assets/images/logo/blue_full.png"
+            alt="Pixkyro Logo"
+          />
+
+          <div data-aos="zoom-out-up" class="sosial-media">
+            <a href="https://www.instagram.com/pixkyro"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="pages/pagenotfound/oops.html"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a href="pages/pagenotfound/oops.html"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="beranda-content">
+          <section data-aos="fade-right" class="tentang-singkat">
+            <h1 class="judul beranda-subjudul">APA ITU PIXKYRO?</h1>
+            <p>
+              Pixkyro adalah sebuah studio kecil Pembuatan Animasi dan
+              Pengembangan Game. Lewat Animasi dan Game, Kami ingin menyampaikan
+              cerita-cerita yang penuh makna, serta membangun pengalaman yang
+              menyenangkan bagi siapa pun yang menikmatinya.
+            </p>
+            <a href="#">Lebih Lanjut <i class="bx bx-chevrons-right"></i></a>
+          </section>
+
+          <section class="visi-misi">
+            <h1 data-aos="fade-right" class="judul beranda-subjudul">
+              VISI & MISI
+            </h1>
+
+            <div class="visi-misi-container">
+              <div data-aos="fade-right" class="visi">
+                <h2>Visi</h2>
+                <p>
+                  "Menjadi studio kreatif independen yang membangun dunia
+                  digital imajinatif melalui game dan animasi, untuk
+                  menginspirasi dan menghibur generasi global."
+                </p>
+              </div>
+
+              <div data-aos="fade-right" class="misi">
+                <h2>Misi</h2>
+                <ol>
+                  <li>
+                    Mengembangkan karya digital berkualitas tinggi dalam bentuk
+                    game dan animasi dengan identitas visual yang kuat.
+                  </li>
+                  <li>
+                    Menciptakan karakter, cerita, dan dunia fiksi yang orisinal
+                    dan penuh imajinasi.
+                  </li>
+                  <li>
+                    Menjelajahi berbagai gaya visual dan teknik penceritaan
+                    untuk terus bereksperimen dan berinovasi.
+                  </li>
+                  <li>
+                    Menyediakan wadah eksplorasi kreatif yang bebas,
+                    kolaboratif, dan menyenangkan.
+                  </li>
+                  <li>
+                    Menjadi sumber inspirasi bagi generasi muda melalui karya
+                    yang penuh semangat, kreativitas, dan karakter.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+          <!-- * Berita -->
+          <section class="berita">
+            <h1 data-aos="fade-right" class="judul beranda-subjudul">BERITA TERBARU</h1>
+            <div id="beritaContent" class="berita-content">
+              
+            </div>
+          </section>
+          <!-- * End Berita -->
+        </div>
+      </div>
+
+      <!-- * footer -->
+      <footer>
+        <div class="contact">
+          <img src="assets/images/logo/white_full.png" alt="" />
+          <p><i class="bx bxs-envelope"></i> pixkyro@gmail.com</p>
+          <p class="copyright">© 2025 Pixkyro Studio. All rights reserved.</p>
+        </div>
+
+        <div class="sosial-media-footer">
+          <h2>Sosial Media</h2>
+          <a href="pages/pagenotfound/oops.html"><p>Instagram</p></a>
+          <a href="pages/pagenotfound/oops.html"><p>YouTube</p></a>
+          <a href="pages/pagenotfound/oops.html"><p>Tiktok</p></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+  </body>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/berita.js"></script>
+</html>
