@@ -1,0 +1,32 @@
+.judul {
+  position: relative;
+  display: inline-block;
+}
+
+.judul::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100px;
+  height: 5px;
+  background-color: #132c4a;
+  transform: skewX(-30deg);
+}
+
+.judul::before {
+  content: "";
+  position: absolute;
+  left: 103px;
+  bottom: -7px;
+  width: 36px;
+  height: 5px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #132c4a,
+    #132c4a 3px,
+    transparent 2px,
+    transparent 6px
+  );
+  transform: skewX(-30deg);
+}
