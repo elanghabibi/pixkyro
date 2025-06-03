@@ -188,7 +188,7 @@ footer {
   width: 14rem;
 }
 
-.sosial-media-footer h2, .sosial-media-footer a p {
+.sosial-media-footer h2, .sosial-media-footer a, .sosial-media-footer a p {
   width: max-content;
 }
 }
