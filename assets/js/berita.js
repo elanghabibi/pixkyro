@@ -29,25 +29,27 @@ const berita = [
 if (berita.length != 0) {
   for (let i = 0; i < 3; i++) {
     const beritaCard = document.createElement("div");
-    beritaCard.className = "berita-card";
-    beritaCard.dataset.aos = "fade-up"
+    beritaCard.classList.add("aos", "berita-card");
+    beritaCard.setAttribute("data-aos", "fade-up");
 
     const beritaImg = document.createElement("div");
     beritaImg.id = "beritaImg";
-    beritaImg.style.backgroundImage = `url('${berita[i].beritaImg}')`
+    beritaImg.style.backgroundImage = `url('${berita[i].beritaImg}')`;
 
     const beritaKeterangan = document.createElement("h3");
     beritaKeterangan.id = "beritaKeterangan";
-    beritaKeterangan.textContent = berita[i].beritaKeterangan
+    beritaKeterangan.textContent = berita[i].beritaKeterangan;
 
     const beritaJudul = document.createElement("h2");
     beritaJudul.id = "beritaJudul";
-    beritaJudul.textContent = berita[i].beritaJudul
+    beritaJudul.textContent = berita[i].beritaJudul;
 
-    const beritaContent = document.getElementById("beritaContent")
-    beritaCard.appendChild(beritaImg)
-    beritaCard.appendChild(beritaKeterangan)
-    beritaCard.appendChild(beritaJudul)
-    beritaContent.appendChild(beritaCard)
+    const beritaContent = document.getElementById("beritaContent");
+    beritaCard.appendChild(beritaImg);
+    beritaCard.appendChild(beritaKeterangan);
+    beritaCard.appendChild(beritaJudul);
+    beritaContent.appendChild(beritaCard);
   }
 }
+
+initAOS();

@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oops! Halaman Tidak Tersedia</title>
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oops! Halaman Tidak Tersedia</title>
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-  <style>
-    :root {
-      --primary: #111827;
-      --accent: #2563eb;
-      --gray: #c9c9c9;
-    }
+    <style>
+      :root {
+        --primary: #111827;
+        --accent: #2563eb;
+        --gray: #c9c9c9;
+      }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--primary);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(to right, #20599d, #132c4a);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-    .container {
-      text-align: center;
-      padding: 24px;
-    }
+      .container {
+        text-align: center;
+        padding: 24px;
+      }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 8px;
-    }
+      @keyframes glow {
+        0% {
+          filter: drop-shadow(0 0 0px white);
+        }
+        50% {
+          filter: drop-shadow(0 0 7px white);
+        }
+        100% {
+          filter: drop-shadow(0 0 0px white);
+        }
+      }
 
-    p {
-      font-size: 1rem;
-      color: var(--gray);
-      margin-bottom: 24px;
-    }
-
-    a {
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    @media (min-width: 640px) {
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 8px;
+      }
+      h1::after {
+        content: "";
+        animation: fillDot 3s infinite ease-in-out;
+      }
+
+      @keyframes fillDot {
+        0% {
+          content: ".";
+        }
+        25% {
+          content: "..";
+        }
+        50% {
+          content: "...";
+        }
+        75% {
+          content: "....";
+        }
+        100% {
+          content: ".....";
+        }
       }
 
       p {
-        font-size: 1.125rem;
+        font-size: 1rem;
+        color: var(--gray);
+        margin-bottom: 24px;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Oops! Halaman tidak tersedia</h1>
-    <p>Halaman ini mungkin belum jadi atau memang belum diatur. Yuk kembali ke beranda!</p>
-    <a href="../../home.html">Kembali ke Beranda</a>
-  </div>
-</body>
+
+      a {
+        text-decoration: none;
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      @media (min-width: 640px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.125rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="../../assets/images/logo/white.png"
+        alt="Pixkyro Logo"
+        style="width: 5rem; animation: glow 6s infinite ease-in-out;"
+      />
+      <h1>Page ini kosong bro</h1>
+      <p>
+        Pembuatnya lupa atur pagenya atau mungkin page yang kamu tuju tidak
+        ditemukan!
+      </p>
+      <a href="../../home.html">Kembali ke Beranda</a>
+    </div>
+  </body>
 </html>

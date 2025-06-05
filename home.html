@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/shape.css" />
+    <link rel="stylesheet" href="assets/css/data-aos.css" />
     <link
       rel="shortcut icon"
       href="assets/images/favicon/favicon.ico"
@@ -42,13 +43,17 @@
 
       <div class="beranda" id="beranda">
         <div class="beranda-welcome">
-          <h1>Selamat datang di Website</h1>
+          <h1 class="aos" data-aos="fade-down">
+            Selamat datang di Website
+          </h1>
           <img
+            class="aos"
+            data-aos="zoom-out"
             src="assets/images/logo/blue_full.png"
             alt="Pixkyro Logo"
           />
 
-          <div class="sosial-media">
+          <div data-aos="fade-up" class="sosial-media aos">
             <a href="https://www.instagram.com/pixkyro"
               ><i class="bx bxl-instagram"></i
             ></a>
@@ -62,7 +67,7 @@
         </div>
 
         <div class="beranda-content">
-          <section class="tentang-singkat">
+          <section data-aos="slide-right" class="aos tentang-singkat">
             <h1 class="judul beranda-subjudul">APA ITU PIXKYRO?</h1>
             <p>
               Pixkyro adalah sebuah studio kecil Pembuatan Animasi dan
@@ -74,12 +79,12 @@
           </section>
 
           <section class="visi-misi">
-            <h1 class="judul beranda-subjudul">
+            <h1 data-aos="slide-right" class="aos judul beranda-subjudul">
               VISI & MISI
             </h1>
 
             <div class="visi-misi-container">
-              <div class="visi">
+              <div data-aos="slide-right" class="aos visi">
                 <h2>Visi</h2>
                 <p>
                   "Menjadi studio kreatif independen yang membangun dunia
@@ -88,7 +93,7 @@
                 </p>
               </div>
 
-              <div class="misi">
+              <div data-aos="slide-right" class="aos misi">
                 <h2>Misi</h2>
                 <ol>
                   <li>
@@ -118,10 +123,10 @@
 
           <!-- * Berita -->
           <section class="berita">
-            <h1 class="judul beranda-subjudul">BERITA TERBARU</h1>
-            <div id="beritaContent" class="berita-content">
-              
-            </div>
+            <h1 data-aos="slide-right" class="aos judul beranda-subjudul">
+              BERITA TERBARU
+            </h1>
+            <div id="beritaContent" class="berita-content"></div>
           </section>
           <!-- * End Berita -->
         </div>
@@ -144,7 +149,8 @@
       </footer>
     </div>
 
-    
+    <!-- JS AOS -->
+    <script src="assets/js/data-aos.js"></script>
   </body>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/berita.js"></script>
