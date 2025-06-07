@@ -166,34 +166,7 @@
 
   /* * End vimi */
 
-  /* * Berita */
-
-  .berita-content {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .berita-card {
-    width: 80vw;
-    margin-bottom: 3rem;
-  }
-
-  #beritaImg {
-    width: 80vw;
-  }
-
-  #beritaKeterangan {
-    margin: 0.5rem 0 0.3rem 0;
-  }
-
-  #beritaJudul {
-    width: 80vw;
-  }
-
-  /* * End Berita */
+  
 
   /* * end beranda */
   footer {

@@ -1,53 +1,52 @@
-let pathBeritaImg = "assets/images/background/";
-
 const berita = [
   {
-    beritaImg: `${pathBeritaImg}beranda_img.png`,
-    beritaKeterangan: "12/03/2025 | PixFeed",
-    beritaJudul: "Studio Kami, Dunia Kami: Selamat Datang di Pixkyro"
-  },
-  {
-    beritaImg: `${pathBeritaImg}pp.png`,
-    beritaKeterangan: "15/04/2025 | PixNews",
-    beritaJudul:
-      "Kiiro Terbang Tinggi! Maskot Baru dari Pixkyro Resmi Diperkenalkan"
-  },
-  {
-    beritaImg: `${pathBeritaImg}beranda_img.png`,
-    beritaKeterangan: "27/05/2025 | Inside Pixkyro",
-    beritaJudul:
-      "Dari Sketsa ke Dunia Nyata: Proses Kreatif Animasi Pixkyro Terungkap"
-  },
-  {
-    beritaImg: `${pathBeritaImg}beranda_img.png`,
-    beritaKeterangan: "30/05/2025 | Kiiropedia",
-    beritaJudul:
-      "Dari Sketsa ke Dunia Nyata: Proses Kreatif Animasi Pixkyro Terungkap"
+    id: "1",
+    waktu: "07 Juni 2025",
+    jenis: "PixFeed",
+    judul: "Langkah awal berdirinya Pixkyro Studio",
+    isi: "<img src='../../assets/images/background/beranda_img.png'><p>Pada tanggal 26 Maret 2025, Elang Alamsyah Habibi secara resmi membentuk sebuah studio kreatif bernama Pixkyro Studio. Studio ini berlokasi di Indonesia dan dibuat sebagai tempat untuk menuangkan berbagai ide kreatif, mulai dari pengembangan game, animasi, hingga konten digital lainnya.</p><br><p>Pixkyro Studio difokuskan untuk mengembangkan proyek berupa Game ataupun Animasi. Studio ini akan menjadi wadah untuk menghasilkan karya-karya digital yang sesuai dengan minat dan gaya Elang sendiri.</p><br><p>Studio ini juga menjadi langkah awal bagi Elang untuk lebih serius dalam berkarya di dunia digital. Ia ingin menjadikan Pixkyro sebagai tempat belajar, berkembang, dan mencoba berbagai hal baru tanpa tekanan dari luar.</p><br><p>Hingga saat ini, Elang masih dalam proses belajar dan menyusun fondasi awal untuk Pixkyro Studio. Saat ini, Pixkyro Studio belum aktif memproduksi konten, namun sedang dipersiapkan secara perlahan agar ke depannya bisa berjalan dengan lebih terarah. Meski masih dalam tahap awal, Elang berharap Pixkyro Studio bisa terus aktif dan konsisten menghasilkan konten yang positif dan menginspirasi.</p>"
   }
 ];
 
+const path = window.location.pathname;
+
+let start = 0;
+let end;
+
+if (path.includes("/pages/berita/berita.html") || path.includes("home.html")) {
+  if (berita.length <= 5) {
+    end = berita.length;
+  } else {
+    end = 5;
+  }
+} else if (path.includes("/pages/berita/index.html")) {
+  end = berita.length;
+} else {
+  end = berita.length;
+}
+
 if (berita.length != 0) {
-  for (let i = 0; i < 3; i++) {
+  for (let i = start; i < end; i++) {
+    const indexTerbalik = berita.length - 1 - i;
+    console.log(indexTerbalik);
     const beritaCard = document.createElement("div");
     beritaCard.classList.add("aos", "berita-card");
     beritaCard.setAttribute("data-aos", "fade-up");
-
-    const beritaImg = document.createElement("div");
-    beritaImg.id = "beritaImg";
-    beritaImg.style.backgroundImage = `url('${berita[i].beritaImg}')`;
+    beritaCard.onclick = function () {
+      window.location.href = `../berita/berita.html?id=${berita[indexTerbalik].id}`;
+    };
 
     const beritaKeterangan = document.createElement("h3");
     beritaKeterangan.id = "beritaKeterangan";
-    beritaKeterangan.textContent = berita[i].beritaKeterangan;
+    beritaKeterangan.textContent = `${berita[indexTerbalik].waktu} | ${berita[indexTerbalik].jenis}`;
 
     const beritaJudul = document.createElement("h2");
     beritaJudul.id = "beritaJudul";
-    beritaJudul.textContent = berita[i].beritaJudul;
+    beritaJudul.textContent = berita[indexTerbalik].judul;
 
     const beritaContent = document.getElementById("beritaContent");
-    beritaCard.appendChild(beritaImg);
-    beritaCard.appendChild(beritaKeterangan);
     beritaCard.appendChild(beritaJudul);
+    beritaCard.appendChild(beritaKeterangan);
     beritaContent.appendChild(beritaCard);
   }
 }

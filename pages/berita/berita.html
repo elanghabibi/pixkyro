@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Berita Pixkyro</title>
+    <title>Document</title>
+
     <link
       rel="shortcut icon"
       href="../../assets/images/favicon/favicon.ico"
       type="image/x-icon"
     />
+
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <link rel="stylesheet" href="../../assets/css/responsive.css" />
     <link rel="stylesheet" href="../../assets/css/shape.css" />
     <link rel="stylesheet" href="../../assets/css/data-aos.css" />
-    <link rel="stylesheet" href="../../assets/css/list-berita.css" />
-    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/main-berita.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -35,23 +36,29 @@
         <nav class="navbar">
           <a href="../../home.html">Beranda</a>
           <a href="../karya/index.html">Karya</a>
-          <a href="#">Berita</a>
+          <a href="../berita/index.html">Berita</a>
           <a href="../tentang/index.html">Tentang</a>
           <a href="../kontak/index.html">Kontak</a>
         </nav>
       </header>
       <div class="overlay" id="overlay" onclick="closeMenu()"></div>
 
-      <!-- Main COntent -->
       <div class="main-content">
-        <div class="berita">
-          <h1 class="aos judul berita-judul" data-aos="slide-right">
-            BERITA PIXKYRO
-          </h1>
-          <div id="beritaContent"></div>
+        <div id="kontenDetailBerita">
+          <div class="keterangan">
+            <h1 id="beritaDetailJudul"></h1>
+            <p id="beritaDetailKeterangan"></p>
+          </div>
+          <p id="beritaDetailIsi"></p>
+        </div>
+
+        <div class="center-div">
+          <div class="list-berita">
+            <h1 class="judul">BERITA TERBARU</h1>
+            <div id="beritaContent"></div>
+          </div>
         </div>
       </div>
-      <!-- end -->
 
       <!-- * footer -->
       <footer>
@@ -69,10 +76,32 @@
         </div>
       </footer>
     </div>
+    <script src="../../assets/js/berita.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+      const konten = document.getElementById("kontenDetailBerita");
 
-    <!-- data aos -->
+      const data = berita.find((b) => b.id === id);
+
+      if (data) {
+        const judulBerita = document.getElementById("beritaDetailJudul");
+        const keteraganBerita = document.getElementById(
+          "beritaDetailKeterangan"
+        );
+        const isiBerita = document.getElementById("beritaDetailIsi");
+
+        judulBerita.textContent = data.judul;
+        keteraganBerita.textContent = `${data.waktu} | ${data.jenis}`;
+        isiBerita.innerHTML = `${data.isi}`;
+
+        document.title = `Pixkyro | Berita Terbaru | ${data.judul}`;
+      } else {
+        document.title = "Berita tidak ditemukan";
+        konten.innerHTML = `<div id="kontenDetailBerita"><h1 id="beritaDetailJudul">Berita tidak ditemukan.</h1></div>`;
+      }
+    </script>
     <script src="../../assets/js/data-aos.js"></script>
+    <script src="../../assets/js/script.js"></script>
   </body>
-  <script src="../../assets/js/script.js"></script>
-  <script src="../../assets/js/berita.js"></script>
 </html>

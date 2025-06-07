@@ -1,0 +1,48 @@
+.main-content {
+  display: flex;
+  align-items: start;
+  margin-top: 5rem;
+}
+
+.list-berita {
+  border: 3px solid var(--main-color);
+  height: fit-content;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.list-berita h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.berita-card {
+  cursor: pointer;
+  border-bottom: 2px dotted var(--main-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+#beritaJudul {
+  color: var(--main-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+#beritaKeterangan {
+  font-size: 1rem;
+  color: black;
+}
+
+
+@media (max-width: 720px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .berita {
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+}

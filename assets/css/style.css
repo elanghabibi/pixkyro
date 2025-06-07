@@ -153,10 +153,6 @@ header {
   margin: 0 2rem;
 }
 
-.beranda-content {
-  margin-top: 5rem;
-}
-
 .beranda-subjudul {
   color: var(--main-color);
   font-size: 3rem;
@@ -214,38 +210,6 @@ header {
 
 /* * End vimi */
 
-/* * Berita */
-
-.berita-content {
-  margin-top: 3rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.berita-card {
-  width: 25vw;
-}
-
-#beritaImg {
-  cursor: pointer;
-  width: 25vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  aspect-ratio: 16/9;
-}
-
-#beritaKeterangan {
-  margin: .5rem 0 .3rem 0;
-}
-
-#beritaJudul {
-  width: 25vw;
-  text-align: left;
-}
-
-/* * End Berita */
 
 
 /* * Footer */
