@@ -13,7 +13,10 @@ const path = window.location.pathname;
 let start = 0;
 let end;
 
-if (path.includes("/pages/berita/berita.html") || path.includes("home.html")) {
+if (
+  path.includes("/pages/berita/berita.html") ||
+  path.includes("pixkyro/index.html")
+) {
   if (berita.length <= 5) {
     end = berita.length;
   } else {
@@ -33,14 +36,24 @@ if (berita.length != 0) {
     beritaCard.classList.add("aos", "berita-card");
     beritaCard.setAttribute("data-aos", "fade-up");
     beritaCard.onclick = function () {
-      window.location.href = `../berita/berita.html?id=${berita[indexTerbalik].id}`;
+      if (path.includes("pixkyro/index.html")) {
+        window.location.href = `pages/berita/berita.html?id=${berita[indexTerbalik].id}`;
+      } else if (
+        path.includes("/pages/berita/berita.html") ||
+        path.includes("/pages/berita/index.html")
+      ) {
+        window.location.href = `../berita/berita.html?id=${berita[indexTerbalik].id}`;
+      } else {
+        window.location.href = "../pages/pagenotfound/";
+      }
     };
 
-    const beritaKeterangan = document.createElement("h3");
+    const beritaKeterangan = document.createElement("h5");
     beritaKeterangan.id = "beritaKeterangan";
-    beritaKeterangan.textContent = `${berita[indexTerbalik].waktu} | ${berita[indexTerbalik].jenis}`;
+    let classNewsCat = berita[indexTerbalik].jenis.toLowerCase()
+    beritaKeterangan.innerHTML = `${berita[indexTerbalik].waktu} | <span class="news-cat ${classNewsCat}">${berita[indexTerbalik].jenis}</span>`;
 
-    const beritaJudul = document.createElement("h2");
+    const beritaJudul = document.createElement("h4");
     beritaJudul.id = "beritaJudul";
     beritaJudul.textContent = berita[indexTerbalik].judul;
 

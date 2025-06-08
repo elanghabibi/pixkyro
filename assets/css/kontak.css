@@ -1,4 +1,4 @@
-.kontak h1:nth-child(3) {
+.kontak h1:nth-child(2) {
   margin-top: 3rem;
 }
 
@@ -7,6 +7,7 @@
   height: fit-content;
   align-items: center;
   font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .kontak ul li i {
