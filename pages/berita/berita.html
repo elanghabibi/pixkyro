@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/judul.css" />
+    <link rel="stylesheet" href="../../assets/css/data-aos.css" />
+    <link rel="stylesheet" href="../../assets/css/main-berita.css" />
+    <link rel="stylesheet" href="../../assets/css/navbar-footer.css">
+    <link rel="stylesheet" href="../../assets/css/news-category.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <a href="#"
+          ><img
+            class="logo"
+            src="../../assets/images/logo/white_full.png"
+            alt="Pixkyro Logo"
+        /></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+          <a href="../../">Beranda</a>
+          <a href="../karya/">Karya</a>
+          <a href="../berita/">Berita</a>
+          <a href="../tentang/">Tentang</a>
+          <a href="../kontak/ ">Kontak</a>
+        </nav>
+      </header>
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+      <div class="main-content">
+        <div id="kontenDetailBerita">
+          <div class="keterangan">
+            <h1 id="beritaDetailJudul"></h1>
+            <p id="beritaDetailKeterangan"></p>
+          </div>
+          <p id="beritaDetailIsi"></p>
+        </div>
+
+        <div class="center-div">
+          <div class="list-berita">
+            <h1 class="judul">BERITA TERBARU</h1>
+            <div id="beritaContent"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- * footer -->
+      <footer>
+        <div class="contact">
+          <img src="../../assets/images/logo/white_full.png" alt="" />
+          <p><i class="bx bxs-envelope"></i> pixkyro@gmail.com</p>
+          <p class="copyright">© 2025 Pixkyro Studio. All rights reserved.</p>
+        </div>
+
+        <div class="sosial-media-footer">
+          <h2>Sosial Media</h2>
+          <a href="https://www.instagram.com/pixkyro"><p>Instagram</p></a>
+          <a href="https://www.youtube.com/@PixkyroStudio"><p>YouTube</p></a>
+          <a href="https://www.tiktok.com/@pixkyro"><p>Tiktok</p></a>
+        </div>
+      </footer>
+    </div>
+    <script src="../../assets/js/berita.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+      const konten = document.getElementById("kontenDetailBerita");
+
+      const data = berita.find((b) => b.id === id);
+
+      if (data) {
+        const judulBerita = document.getElementById("beritaDetailJudul");
+        const keteraganBerita = document.getElementById(
+          "beritaDetailKeterangan"
+        );
+        const isiBerita = document.getElementById("beritaDetailIsi");
+
+        judulBerita.textContent = data.judul;
+        let classNewsCat = data.jenis.toLowerCase()
+        keteraganBerita.innerHTML = `${data.waktu} | <span class="news-cat ${classNewsCat}">${data.jenis}</span>`;
+
+        isiBerita.innerHTML = `${data.isi}`;
+
+        document.title = `Pixkyro | Berita Terbaru | ${data.judul}`;
+      } else {
+        document.title = "Berita tidak ditemukan";
+        konten.innerHTML = `<div id="kontenDetailBerita"><h1 id="beritaDetailJudul">Berita tidak ditemukan.</h1></div>`;
+      }
+    </script>
+    <script src="../../assets/js/data-aos.js"></script>
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>

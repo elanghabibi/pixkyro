@@ -1,0 +1,89 @@
+.beranda-welcome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+}
+
+.beranda-welcome img {
+  height: 20vh;
+  margin: 15vh 0;
+}
+
+.sosial-media a i {
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 100%;
+  font-size: 1.7rem;
+  padding: 0.7rem;
+  border: 3px solid transparent;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+
+.sosial-media a i:hover {
+  background-color: #eef0f2;
+  border: 3px solid var(--main-color);
+  color: var(--main-color);
+  transform: translateY(-15px) scale(1.1);
+  box-shadow: 0 0 10px #2768b8;
+}
+
+.sosial-media {
+  cursor: default;
+}
+
+.sosial-media a:nth-child(2) {
+  margin: 0 2rem;
+}
+
+/* beranda-content */
+.tentang-singkat a {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    color: #2768b8;
+}
+
+#beritaContent {
+    border: 3px solid var(--main-color);
+    padding: 1rem 1rem 2rem 1rem;
+    margin-top: 1rem;
+}
+
+.berita-card {
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+.berita-card::after {
+    content: "";
+    cursor: default;
+    position: absolute;
+    height: 3px;
+    border-bottom: 3px dotted var(--main-color);
+    width: 100%;
+    left: 0;
+    bottom: -1rem;
+}
+
+#beritaKeterangan {
+    font-size: 1.2rem;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+  .beranda-welcome {
+    height: 91vh;
+  }
+
+  .beranda-welcome img {
+    height: 13vh;
+    margin: 14vh 0;
+  }
+}
