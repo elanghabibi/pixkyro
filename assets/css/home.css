@@ -70,6 +70,10 @@
     bottom: -1rem;
 }
 
+#beritaJudul {
+    text-align: justify;
+}
+
 #beritaKeterangan {
     font-size: 1.2rem;
     display: flex;
