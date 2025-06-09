@@ -1,0 +1,101 @@
+#beritaContent {
+  place-items: center;
+  margin-top: 1rem;
+  display: grid;
+  width: 100%;
+  align-items: start;
+  border: 3px solid var(--main-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.berita-card {
+  cursor: pointer;
+  width: 90%;
+  margin-bottom: 2rem;
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-bottom: 2rem;
+  border-bottom: 3px dotted var(--main-color);
+}
+
+#beritaKeterangan {
+  display: flex;
+  height: fit-content;
+  margin: 0.3rem 0 0.3rem 0;
+  width: fit-content;
+  color: black;
+  font-size: 1.3rem;
+}
+
+#beritaJudul {
+  font-size: 1.7rem;
+  width: 100%;
+  color: var(--main-color);
+  text-align: justify;
+}
+
+
+/* * Select Dropdown Filter */
+select {
+  background-color: #132c4a;
+  color: #ffffff;
+  padding: .5rem 1.8rem .5rem 1rem;
+  border-radius: 10px;
+  font-size: .8rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%200L5%204L9%200H1Z%22%20fill%3D%22%23ffffff%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+option {
+  background-color: #132c4a;
+  color: white;
+}
+
+
+
+@media (max-width: 850px) {
+  /* * Berita */
+
+  #beritaContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: 3px solid var(--main-color);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .berita-card {
+    width: 100%;
+    min-height: fit-content;
+    min-height: 6rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    border-bottom: 3px dotted var(--main-color);
+  }
+
+  #beritaKeterangan {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #beritaJudul {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  /* * End Berita */
+}
