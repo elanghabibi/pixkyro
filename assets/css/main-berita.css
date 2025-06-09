@@ -18,8 +18,8 @@ a {
 
 #beritaDetailKeterangan {
   margin: 0.3rem 0 1rem 0;
-  color: black;
-  font-size: 1.2rem;
+  color: #3d3d3d;
+  font-size: 1.1rem;
   display: flex;
   height: fit-content;
   align-items: center;
@@ -37,6 +37,7 @@ a {
 
 #beritaDetailIsi p {
   text-indent: 10px;
+  color: #3a3a3a;
   text-align: justify;
 }
 
@@ -105,13 +106,16 @@ a {
 
   #beritaDetailKeterangan {
     margin: 0.3rem 0 1rem 0;
-    color: black;
     font-size: 1rem;
   }
 
   #beritaDetailIsi {
     font-size: 1rem;
     width: 100%;
+  }
+
+  #beritaDetailIsi p {
+    font-size: .8rem;
   }
 
 

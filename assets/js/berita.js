@@ -1,5 +1,12 @@
 const berita = [
   {
+    id: "0",
+    waktu: "26 Maret 2025",
+    jenis: "Penting",
+    judul: "Situs Website Pixkyro Resmi Dibuka",
+    isi: "<h6>Halo! Selamat Datang di halaman berita website Pixkyro Studio</h6>"
+  },
+  {
     id: "1",
     waktu: "07 Juni 2025",
     jenis: "PixFeed",
@@ -17,9 +24,15 @@ const berita = [
     id: "3",
     waktu: "09 Juni 2025",
     jenis: "PixFeed",
-    judul:
-      "Pixkyro Studio Kini Terbuka untuk Kamu yang Ingin Ikut Berkontribusi",
-    isi: "<p>Pixkyro Studio kini membuka pintu lebih lebar bagi kamu yang ingin mendukung perkembangan studio ini. Mulai hari ini, Pixkyro menerima donasi melalui platform Trakteer, sebagai salah satu cara sederhana untuk bantu studio terus berjalan dan berkembang.</p><br><p>Selain itu, Pixkyro juga membuka kesempatan bagi siapa pun yang ingin ikut berkontribusi dalam pengembangan proyek—baik itu dalam bentuk ide, ilustrasi, pemrograman, atau sekadar bantu semangat dari balik layar. Studio ini masih dalam tahap awal dan semua bantuan, sekecil apa pun, sangat berarti.</p><br><p>Bagi kamu yang ingin mendukung secara finansial, bisa mampir ke halaman Trakteer berikut: <a href='https://trakteer.id/pixkyro' target='_blank' rel='noopener noreferrer'>Dukung Kami</a></p><br><p>Bagi yang tertarik gabung dan ingin berkembang dengan kami, bisa klik teks berwarna biru disamping ini, isi data diri dan keahlian kalian. <a href='https://forms.gle/UVtvew1ajoJ25CpD8' target='_blank' rel='noopener noreferrer'>Formulir Gabung ke Pixkyro Studio</a></p><br><p> Kami tunggu kehadiran kalian.</p><br><p>'Karena kadang, sebuah langkah kecil dari orang lain, bisa jadi dorongan besar untuk terus berkarya.'</p>"
+    judul: "Pixkyro Studio Kini Terbuka untuk Kamu yang Ingin Ikut Berkontribusi",
+    isi: "<p>Pixkyro Studio kini membuka pintu lebih lebar bagi kamu yang ingin mendukung perkembangan studio ini. Mulai hari ini, Pixkyro menerima donasi melalui platform Trakteer, sebagai salah satu cara sederhana untuk bantu studio terus berjalan dan berkembang.</p><br><p>Selain itu, Pixkyro juga membuka kesempatan bagi siapa pun yang ingin ikut berkontribusi dalam pengembangan proyek—baik itu dalam bentuk ide, ilustrasi, pemrograman, atau sekadar bantu semangat dari balik layar. Studio ini masih dalam tahap awal dan semua bantuan, sekecil apa pun, sangat berarti.</p><br><p>Bagi kamu yang ingin mendukung secara finansial, bisa mampir ke halaman Trakteer berikut: <a href='https://trakteer.id/pixkyro' target='_blank' rel='noopener noreferrer'>Dukung Kami</a></p><br><p>Bagi yang tertarik gabung dan ingin berkembang dengan kami, bisa klik teks berwarna biru disamping ini, isi data diri dan keahlian kalian. <a href='https://forms.gle/UVtvew1ajoJ25CpD8' target='_blank' rel='noopener noreferrer'>Formulir Gabung ke Pixkyro Studio</a></p><br><p> Kami tunggu kehadiran kalian.</p><br><p>&quot;Karena kadang, sebuah langkah kecil dari orang lain, bisa jadi dorongan besar untuk terus berkarya.&quot;</p>"
+  },
+  {
+    id: "4",
+    waktu: "09 Juni 2025",
+    jenis: "Talks",
+    judul: "Belum ada proyek? Ini alasan kenapa Pixkyro masih kosongan",
+    isi: "<p>Sejak diumumkan berdirinya pada 26 Maret 2025, Pixkyro Studio memang belum menampilkan banyak proyek besar atau konten kreatif yang dirilis ke publik. Mungkin sebagian orang penasaran, &quot;Kok belum ada gamenya?&quot; atau &quot;Ini Studio-nya bikin apa sih sebenernya?&quot;</p><br><p>Nah, jawabannya simpel: Pixkyro tuh masih dalam tahap awal banget. Studio ini dibangun oleh Elang Alamsyah Habibi sebagai ruang untuk belajar, berkembang, dan bikin karya bareng. Tapi karena ini dijalankan sambil belajar dan belum ada tim tetap, prosesnya memang pelan dan bertahap.</p><br><p>Elang sendiri saat ini masih menyusun arah studio, ngerancang konsep, sambil terus belajar banyak hal mulai dari 3D modeling, ilustrasi, sampai animasi. Belum ada proyek yang dirilis bukan berarti diam, tapi lagi menyiapkan fondasi biar nanti kalau udah jalan, bisa konsisten dan serius.</p><br><p>&quot;Untuk saat ini aku masih membangun fondasi awal dulu, aku gak mau buru-buru rilis sesuatu yang belum siap. Sekarang fokus bikin struktur dasar dulu, baru nanti pelan-pelan ke kontennya,&quot; kata Elang saat menanyakan dirinya sendiri soal perkembangan Pixkyro.</p><br><p>Jadi buat kamu yang nungguin karya dari Pixkyro, tenang aja. Semua itu butuh proses dan kerja keras lebih, yang terpenting adalah terus konsisten dan pantang menyerah.</p>"
   }
 ];
 
