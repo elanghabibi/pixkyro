@@ -112,7 +112,6 @@ function tampilkanBerita(kategori) {
   }
 }
 
-// Saat halaman pertama kali dibuka, tampilkan semua
 tampilkanBerita("all");
 
 selectKategori.addEventListener("change", function () {
