@@ -24,7 +24,8 @@ const berita = [
     id: "3",
     waktu: "09 Juni 2025",
     jenis: "Penting",
-    judul: "Pixkyro Studio Kini Terbuka untuk Kamu yang Ingin Ikut Berkontribusi",
+    judul:
+      "Pixkyro Studio Kini Terbuka untuk Kamu yang Ingin Ikut Berkontribusi",
     isi: "<p>Pixkyro Studio kini membuka pintu lebih lebar bagi kamu yang ingin mendukung perkembangan studio ini. Mulai hari ini, Pixkyro menerima donasi melalui platform Trakteer, sebagai salah satu cara sederhana untuk bantu studio terus berjalan dan berkembang.</p><br><p>Selain itu, Pixkyro juga membuka kesempatan bagi siapa pun yang ingin ikut berkontribusi dalam pengembangan proyek—baik itu dalam bentuk ide, ilustrasi, pemrograman, atau sekadar bantu semangat dari balik layar. Studio ini masih dalam tahap awal dan semua bantuan, sekecil apa pun, sangat berarti.</p><br><p>Bagi kamu yang ingin mendukung secara finansial, bisa mampir ke halaman Trakteer berikut: <a href='https://trakteer.id/pixkyro' target='_blank' rel='noopener noreferrer'>Dukung Kami</a></p><br><p>Bagi yang tertarik gabung dan ingin berkembang dengan kami, bisa klik teks berwarna biru disamping ini, isi data diri dan keahlian kalian. <a href='https://forms.gle/UVtvew1ajoJ25CpD8' target='_blank' rel='noopener noreferrer'>Formulir Gabung ke Pixkyro Studio</a></p><br><p> Kami tunggu kehadiran kalian.</p><br><p>&quot;Karena kadang, sebuah langkah kecil dari orang lain, bisa jadi dorongan besar untuk terus berkarya.&quot;</p>"
   },
   {
@@ -65,11 +66,12 @@ function tampilkanBerita(kategori) {
     }
 
     const path = window.location.pathname;
+    const titleName = document.title;
 
     let start = 0;
     let end;
 
-    if (path.includes("/pages/berita/")) {
+    if (titleName == "Berita Pixkyro") {
       end = beritaYangDitampilkan.length;
     } else {
       if (beritaYangDitampilkan.length <= 5) {
