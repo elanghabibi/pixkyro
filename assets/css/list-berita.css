@@ -90,14 +90,14 @@ option {
     width: 100%;
     align-items: center;
     border: 3px solid var(--main-color);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
+    overflow-y: auto;
   }
 
   .berita-card {
     width: 100%;
     min-height: fit-content;
-    min-height: 6rem;
     margin-bottom: 1rem;
     padding-bottom: 0;
     border-bottom: 3px dotted var(--main-color);
@@ -111,7 +111,7 @@ option {
   }
 
   #beritaJudul {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 100%;
   }
 
