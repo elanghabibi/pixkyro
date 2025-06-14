@@ -34,6 +34,13 @@ const berita = [
     jenis: "Talks",
     judul: "Belum ada proyek? Ini alasan kenapa Pixkyro masih kosongan",
     isi: "<p>Sejak diumumkan berdirinya pada 26 Maret 2025, Pixkyro Studio memang belum menampilkan banyak proyek besar atau konten kreatif yang dirilis ke publik. Mungkin sebagian orang penasaran, &quot;Kok belum ada gamenya?&quot; atau &quot;Ini Studio-nya bikin apa sih sebenernya?&quot;</p><br><p>Nah, jawabannya simpel: Pixkyro tuh masih dalam tahap awal banget. Studio ini dibangun oleh Elang Alamsyah Habibi sebagai ruang untuk belajar, berkembang, dan bikin karya bareng. Tapi karena ini dijalankan sambil belajar dan belum ada tim tetap, prosesnya memang pelan dan bertahap.</p><br><p>Elang sendiri saat ini masih menyusun arah studio, ngerancang konsep, sambil terus belajar banyak hal mulai dari 3D modeling, ilustrasi, sampai animasi. Belum ada proyek yang dirilis bukan berarti diam, tapi lagi menyiapkan fondasi biar nanti kalau udah jalan, bisa konsisten dan serius.</p><br><p>&quot;Untuk saat ini aku masih membangun fondasi awal dulu, aku gak mau buru-buru rilis sesuatu yang belum siap. Sekarang fokus bikin struktur dasar dulu, baru nanti pelan-pelan ke kontennya,&quot; kata Elang saat menanyakan dirinya sendiri soal perkembangan Pixkyro.</p><br><p>Jadi buat kamu yang nungguin karya dari Pixkyro, tenang aja. Semua itu butuh proses dan kerja keras lebih, yang terpenting adalah terus konsisten dan pantang menyerah.</p>"
+  },
+  {
+    id: "5",
+    waktu: "14 Juni 2025",
+    jenis: "Project",
+    judul: "Pixkyro Umumkan Rencana Konten Perdana yang Masih Dalam Pengembangan",
+    isi: "<p>Pixkyro Studio secara resmi mengumumkan bahwa mereka sedang mengerjakan proyek konten kreatif pertamanya, dengan target rilis sebelum tahun 2027. Meskipun perjalanannya masih panjang dan proses pengembangannya dilakukan secara mandiri, studio ini sudah mulai membentuk arah dan pondasi awalnya.</p><br> <p>Elang Alamsyah Habibi, pendiri sekaligus kreator utama di balik Pixkyro, menyebut bahwa proyek ini adalah langkah pertama yang ditujukan untuk memperkenalkan identitas serta semangat dari studio itu sendiri.</p><br><p>&quot;Jujur aja, ini masih awal dan banyak banget yang harus aku pelajari. Tapi aku pengen nantinya konten ini jadi pembuka yang bikin orang paham kenapa Pixkyro dibuat. Proyek ini akan jadi bukti kalau semua bisa dimulai dari proses kecil,&quot; jelas Elang. </p><br><p>Dalam prosesnya, Elang mencoba menyusun ide cerita, mengembangkan konsep visual, dan belajar berbagai alat produksi kreatif yang dibutuhkan, seperti ilustrasi digital, storyboard, bahkan tahap perancangan awal untuk prototype. Semua dikerjakan satu per satu, dengan penuh kesabaran dan ketelitian.</p><br><pclass=>Meski belum banyak detail yang bisa dibagikan ke publik, Elang menyebut bahwa akan ada teaser ringan atau sneak peek yang dirilis beberapa bulan ke depan atau mungkin tahun depan, setelah beberapa elemen penting mulai terbentuk. Ia juga membuka kemungkinan untuk membagikan progresnya secara terbuka lewat blog website, ataupun media sosial.</pclass=><br><p>Buat yang penasaran, yuk pantau sosial media dan situs resmi Pixkyro karena update-update kecil akan dibagikan secara bertahap, walaupun masih lama sih hehe.</pclass=><br>"
   }
 ];
 
@@ -111,7 +118,7 @@ function tampilkanBerita(kategori) {
     }
   }
 }
-
+  
 tampilkanBerita("all");
 
 selectKategori.addEventListener("change", function () {
